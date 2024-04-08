@@ -22,9 +22,57 @@
     display: flex;
     justify-content: center;
     padding: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .logo {
     width: 250px;
+}
+
+
+/* Main */
+
+
+.ville {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    background-color:#EAEAEA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.fa-location-dot{
+    font-size: 20px;   
+}
+
+.section_1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    gap: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.section_1 h2{
+    font-weight: 700;
+    font-size: 26px;
+    
+}
+.section_1 p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.section_1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: linear-gradient(to bottom, #FF79DA -50%, #9356DC 95%);
 }
