@@ -13,8 +13,11 @@
     --couleur-violet: #9356DC;
     --couleur-rose: #FF79DA;
     --couleur-verte: #99E2D0;
+    --couleur-grise_background: #f6f6f6;
     
 }
+
+/* Version Mobile First */
 
 /* Header */
 
@@ -55,7 +58,7 @@
     padding: 50px;
     gap: 30px;
     font-family: 'Roboto', sans-serif;
-    background-color: #f6f6f6;
+    background-color: var(--couleur-grise_background);
 }
 .section_1 h2{
     font-weight: 700;
@@ -78,17 +81,83 @@
     background: linear-gradient(to bottom, var(--couleur-rose) -100%, var(--couleur-violet) 100%);
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 4px 10px 0px #00000040;
+    width: 80%;
+    margin: auto;
 }
 
 .section_1 a:hover{
     transform: scale(1.1);
     transition: all 0.4s ease-in-out;
+    box-shadow: 0px 8px 12px 0px #00000080;
 }
 
 
 
+/* Section Fonctionnement */
 
+.fonctionnement h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px ;
+    
+    
+}
 
+.fonctionnement_bouton {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 22px;
+    align-items: center;
+}
+  
+  .bouton {
+    width: 90%;
+    background-color: var(--couleur-grise_background);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0px 1px 4px 0px #00000080;
+  }
+  
+  .bouton span {
+    border-radius: 50%;
+    color: #fff;
+    height: 22px;
+    width: 25px;
+    display: flex;
+    background-color:var(--couleur-violet);
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+  
+  .bouton div {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    margin-left: -42px;
+
+  }
+
+  .bouton i{
+    gap: 15px;
+    margin-right: 24px;
+  }
+
+    .bouton i:hover{
+        color: var(--couleur-violet);
+    }
+  
+  
+  
 
 
 
