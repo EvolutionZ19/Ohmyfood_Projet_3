@@ -180,7 +180,7 @@
 
 .restaurants{
     background-color: var(--couleur-grise_background);
-    
+    padding-bottom: 50px;  
 }
 
 
@@ -195,6 +195,8 @@
     width: 100%; 
     height: auto; 
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    max-height: 250px;
 }
 
 .nouveau {
@@ -246,16 +248,6 @@
     margin-top: 5px;
     margin-bottom: 8px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
