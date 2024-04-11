@@ -55,7 +55,8 @@ img{
     margin-left: 15px;
     margin-bottom: 10px;
 }
-h3 {
+.menu h3 {
+    position: relative;
     margin-left: 15px;
     font-size: 16px;
     font-weight: 400;
@@ -63,21 +64,26 @@ h3 {
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 10px;
-    position: relative; /* Crée un contexte de positionnement pour les pseudo-éléments */
-    display: inline-block; /* Permet de définir une largeur en fonction du contenu */
-    ;
-
+    display: inline-block;
 }
-h3::after {
-    content: '';
+
+.menu h3::after {
+    content: "";
     position: absolute;
-    bottom: -5px;
-    width: calc(90% - 25px); /* La largeur du pseudo-élément couvre le reste de l'élément h3 */
-    border-bottom: 2px solid #99E2D0;
-    transform: translateX(-185%); /* Déplace le pseudo-élément de 185% de la largeur de l'élément h3 vers la gauche */
-    
+    bottom: -8px; 
+    left: 0;
+    width: 38px; 
+    height: 2px;
+    background-color: #99E2D0;
+    z-index: -1; /* assure que la bordure est en dessous du texte */
 }
 
+
+
+
+article{
+   margin-bottom: 40px;
+}
 
 
 .coeur_vide{
