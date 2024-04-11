@@ -5,8 +5,7 @@
 
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* pour que les paddings et les marges ne modifient pas la largeur de l'élément de départ*/
+ 
 }
 
 :root{
@@ -23,18 +22,21 @@
 
 .div_header{
     display: flex;
-    justify-content: space-between;
-    padding: 40px;  
+    justify-content: space-around;
+    padding: 30px;
+    text-align: center;  
 }
+
 
 .logo {
     width: 200px;
-    margin-left: -260px;
+    
+    
 }
 
 header a{
     font-size: 22px;
-    color: black;
+    color: black;;
 }
 
 /* Main */
@@ -46,15 +48,19 @@ img{
 
 .titre{
     display: flex;
-    gap: 60px;
+    justify-content: space-between;
     font-size: 18px;
     font-weight: 400;
     font-family: 'shrikhand', italic;
     letter-spacing: 1px;
     margin-top: 20px;
     margin-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
+i{
+    margin-left: -50px;
+}
+
 .menu h3 {
     position: relative;
     margin-left: 15px;
@@ -89,6 +95,7 @@ article{
 .coeur_vide{
     font-size: 22px;
     
+    
 }
 .choix{
     display: flex;
@@ -116,7 +123,7 @@ article{
 
 .choix p{
     font-family: 'Roboto', sans-serif;
-    font-size: 15.04px;
+    font-size: 15px;
     font-weight: 700;
     text-align: center;
 
@@ -165,6 +172,7 @@ footer {
     margin-top: -30px;
     
     
+    
 }
 footer h2{
     font-size: 18px;
@@ -185,9 +193,10 @@ footer ul a{
     font-family: 'Roboto', sans-serif;
         
 }
- footer ul li{
+footer ul li{
     margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
+}
 
 footer .fa-utensils {
     margin-right: 15px;
@@ -198,4 +207,13 @@ footer .fa-handshake-angle {
 
 footer .fa-solid{
     font-size: 11px;
+    
+}
+
+#note_enchantee{
+    max-height: 300px; 
+    height: auto;
+    object-fit: cover;
+   
+    
 }
