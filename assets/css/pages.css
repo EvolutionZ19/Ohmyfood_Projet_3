@@ -91,12 +91,6 @@ article{
    margin-bottom: 40px;
 }
 
-
-.coeur_vide{
-    font-size: 22px;
-    
-    
-}
 .choix{
     display: flex;
     flex-direction: column;
@@ -216,4 +210,22 @@ footer .fa-solid{
     object-fit: cover;
    
     
+}
+/* Coeur */
+
+.coeur i{
+    position: absolute;
+    font-size: 22px;
+}
+.coeur_rempli {
+    opacity: 0;
+    background-image: linear-gradient(to bottom, var(--couleur-rose) -100%, var(--couleur-violet) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    transition: opacity 0.3s ease-in-out;
+}
+
+.coeur_rempli:hover {
+    opacity: 1; 
 }
