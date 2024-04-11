@@ -46,15 +46,43 @@ img{
 
 .titre{
     display: flex;
-    gap: 80px;
+    gap: 60px;
     font-size: 18px;
     font-weight: 400;
     font-family: 'shrikhand', italic;
     letter-spacing: 1px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
+h3 {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative; /* Crée un contexte de positionnement pour les pseudo-éléments */
+    display: inline-block; /* Permet de définir une largeur en fonction du contenu */
+    ;
+
+}
+h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: calc(90% - 25px); /* La largeur du pseudo-élément couvre le reste de l'élément h3 */
+    border-bottom: 2px solid #99E2D0;
+    transform: translateX(-185%); /* Déplace le pseudo-élément de 185% de la largeur de l'élément h3 vers la gauche */
+    
+}
+
+
 
 .coeur_vide{
     font-size: 22px;
+    
 }
 .choix{
     display: flex;
@@ -65,6 +93,27 @@ img{
     box-shadow: 0px 4px 10px 0px #00000040;
     background-color: #ffffff;
     padding: 15px;
+}
+
+.choix h4{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.choix h5{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.choix p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15.04px;
+    font-weight: 700;
+    text-align: center;
+
 }
 .resume_prix{
     display: flex;
