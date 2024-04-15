@@ -1,0 +1,57 @@
+:root{
+    --couleur-violet: #9356DC;
+    --couleur-rose: #FF79DA;
+    --couleur-verte: #99E2D0;
+    --couleur-grise_background: #f6f6f6;
+    
+}
+
+
+.loader {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 16px solid #bdc3c7;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    animation: chargeur 4s linear 2;
+    opacity: 0; 
+    visibility: hidden; 
+    position: absolute;
+  }
+  
+  body:target .loader {
+      visibility: visible; /* Rendre visible pendant le chargement */   
+      opacity: 1; /* Rendre visible pendant le chargement */
+  }
+  
+  @keyframes chargeur {
+    0% {
+      transform: rotate(0deg) scale(1);
+      border-top-color: var(--couleur-violet);
+      border-bottom-color: var(--couleur-violet);
+    }
+    25% {
+      border-top-color: var(--couleur-rose);
+      border-bottom-color: var(--couleur-rose);
+    }
+    50% {
+      transform: rotate(360deg) scale(1.15);
+      border-top-color: var(--couleur-violet);
+      border-bottom-color: var(--couleur-violet);
+    }
+    75% {
+      border-top-color: var(--couleur-verte);
+      border-bottom-color: var(--couleur-verte);
+    }
+    100% {
+      transform: rotate(720deg) scale(1);
+      border-top-color: var(--couleur-violet);
+      border-bottom-color: var(--couleur-violet);
+    }
+  }
+  
+  
+  
+  

@@ -166,7 +166,6 @@ footer {
     margin-top: -30px;
     
     
-    
 }
 footer h2{
     font-size: 18px;
@@ -229,3 +228,36 @@ footer .fa-solid{
 .coeur_rempli:hover {
     opacity: 1; 
 }
+
+
+@media screen and (min-width: 1024px) {
+
+    /* Ajustements pour l'en-tête */
+    .div_header {
+        justify-content: center, space-between;
+        padding: 50px 10%;/* le 10% correspond à la marge intérieure gauche et droite */
+    }
+
+    /* Logo plus grand */
+    .logo {
+        width: 250px;
+    }
+    main img{
+        height: 500px;
+        object-fit: cover;
+    }
+    
+    .menu {
+        max-width: 800px; 
+        margin:auto; 
+        padding: 40px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .commander{
+        width: 20%;
+    }
+
+}
+
+
