@@ -86,9 +86,8 @@
 }
 
 .section_1 a:hover{
-    transform: scale(1.1);
     transition: all 0.4s ease-in-out;
-    box-shadow: 0px 8px 12px 0px #00000080;
+    box-shadow: 2px 8px 8px 2px #020202;
 }
 
 
@@ -122,6 +121,10 @@
     border-radius: 20px;
     display: flex;
     box-shadow: 0px 1px 4px 0px #00000080;
+  }
+  .bouton:hover {
+    background-color: #9256dc33;
+    transition: all 0.3s ease-in-out;
   }
   
   .bouton span {

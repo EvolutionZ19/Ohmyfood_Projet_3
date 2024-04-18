@@ -232,13 +232,11 @@ footer .fa-solid{
 
 @media screen and (min-width: 1024px) {
 
-    /* Ajustements pour l'en-tête */
     .div_header {
         justify-content: center, space-between;
         padding: 50px 10%;/* le 10% correspond à la marge intérieure gauche et droite */
     }
 
-    /* Logo plus grand */
     .logo {
         width: 250px;
     }
@@ -259,5 +257,69 @@ footer .fa-solid{
     }
 
 }
+
+/* TEST POUR LE CERCLE DE CONFIRMATION */
+
+.choix {
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.confirmation {
+    position: absolute;
+    right: -20px; 
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--couleur-verte);
+    width: 0; 
+    height: 100%; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+}
+
+.choix:hover .confirmation {
+    opacity: 1; 
+}
+
+.choix h4, .choix h5, .choix p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    transition: all 0.5s ease; 
+}
+
+@keyframes slide {
+    0% {
+        margin-right: 0px;
+        opacity: 0;
+    }
+    100% {
+        width: 180px;
+        opacity: 1;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.choix:hover .confirmation > i {
+    animation: rotation 0.5s linear forwards;
+}
+
+.choix:hover .confirmation {
+    animation: slide 0.5s linear forwards;
+}
+
 
 
