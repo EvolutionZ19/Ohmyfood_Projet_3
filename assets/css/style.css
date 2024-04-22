@@ -284,7 +284,8 @@ footer ul a{
 }
  footer ul li{
     margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
+}
 
 footer .fa-utensils {
     margin-right: 15px;
@@ -333,7 +334,7 @@ footer .fa-solid{
     }
 
     .section_1 a{
-        width: 30%;
+        width: 21%;
     }
 
     .section_1 h2 {

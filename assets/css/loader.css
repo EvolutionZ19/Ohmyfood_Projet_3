@@ -1,56 +1,55 @@
-:root{
-    --couleur-violet: #9356DC;
-    --couleur-rose: #FF79DA;
-    --couleur-verte: #99E2D0;
-    --couleur-grise_background: #f6f6f6;
-    
-}
-
 
 .loader {
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border: 16px solid #bdc3c7;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    animation: chargeur 4s linear 2;
-    opacity: 0; 
-    visibility: hidden; 
-    position: absolute;
-  }
-  
-  body:target .loader {
-      visibility: visible; /* Rendre visible pendant le chargement */   
-      opacity: 1; /* Rendre visible pendant le chargement */
-  }
-  
-  @keyframes chargeur {
-    0% {
-      transform: rotate(0deg) scale(1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Centrage horizontal et vertical */
+  border: 16px solid #bdc3c7;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: chargeur 4s linear 1, terminer 0.5s forwards 4s;
+}
+
+/* Rendre visible pendant le chargement */
+body:target .loader {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Animation */
+@keyframes chargeur {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1); /* pour le centrage */
       border-top-color: var(--couleur-violet);
       border-bottom-color: var(--couleur-violet);
-    }
-    25% {
+  }
+  25% {
       border-top-color: var(--couleur-rose);
       border-bottom-color: var(--couleur-rose);
-    }
-    50% {
-      transform: rotate(360deg) scale(1.15);
+  }
+  50% {
+      transform: translate(-50%, -50%) rotate(360deg) scale(1.15); 
       border-top-color: var(--couleur-violet);
       border-bottom-color: var(--couleur-violet);
-    }
-    75% {
+  }
+  75% {
       border-top-color: var(--couleur-verte);
       border-bottom-color: var(--couleur-verte);
-    }
-    100% {
-      transform: rotate(720deg) scale(1);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(720deg) scale(1); 
       border-top-color: var(--couleur-violet);
       border-bottom-color: var(--couleur-violet);
-    }
   }
-  
-  
-  
+}
+
+@keyframes terminer {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+      visibility: hidden;
+  }
+}

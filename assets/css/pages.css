@@ -307,14 +307,6 @@ footer .fa-solid{
 
 @media screen and (min-width: 1024px) {
 
-    /* .div_header {
-        
-        padding: 50px 10%;/* le 10% correspond à la marge intérieure gauche et droite 
-    }
-
-    .logo {
-        width: 250px;
-    } */
     main img{
         height: 500px;
         object-fit: cover;
@@ -327,7 +319,54 @@ footer .fa-solid{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     
+
     .commander{
         width: 20%;
+        margin-top: 40px;
     }
+    .titre{
+        justify-content: center;
+        gap: 35px;
+    }
+    article{
+        width: 80%;
+        margin: auto;
+        
+    }
+    .choix{
+        margin-top: 10px;
+    }
+    .menu h3{
+        margin-top: 50px;
+    }
+
+}
+
+/* Animation des articles */
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Commencez avec une opacité de 0 pour chaque article */
+        transform: translateX(300px); /* Déplacez chaque article de 300px vers la droite */
+    }
+    to {
+        opacity: 1; /* Montrez l'article avec une opacité de 1 */
+        transform: translateX(0); /* Déplacez chaque article vers sa position d'origine */
+    }
+}
+
+/* Délai des animations */
+.menu article {
+    animation: slideIn 1.5s ease forwards; /* Appliquez l'animation à tous les articles */
+}
+
+.menu article:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.menu article:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.menu article:nth-child(3) {
+    animation-delay: 3s;
 }
