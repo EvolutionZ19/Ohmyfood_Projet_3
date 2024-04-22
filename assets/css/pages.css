@@ -21,22 +21,28 @@
 /* Header */
 
 .div_header{
+    position: relative;
+    height: 60px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    text-align: center;  
+    justify-content: center;
+    align-items: center;
 }
-
-
-.logo {
-    width: 200px;
-    
-    
+header h1{
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Shrikhand', italic;
+    letter-spacing: 1px;
+    margin-left: 10px;
 }
+.retour{
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    left: 10px;
 
-header a{
-    font-size: 22px;
-    color: black;;
+
 }
 
 /* Main */
@@ -47,23 +53,23 @@ img{
 }
 
 .titre{
+    gap: 80px;
     display: flex;
-    justify-content: space-between;
     font-size: 18px;
     font-weight: 400;
     font-family: 'shrikhand', italic;
     letter-spacing: 1px;
     margin-top: 20px;
-    margin-left: 15px;
+    margin-left: 2px;
     margin-bottom: 20px;
 }
-i{
-    margin-left: -50px;
+
+.titre i{
+    margin-top: 10px;
 }
 
 .menu h3 {
     position: relative;
-    margin-left: 15px;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
@@ -131,6 +137,8 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -240,36 +248,6 @@ footer .fa-solid{
     box-shadow: 2px 8px 8px 2px #020202;
 }
 
-
-@media screen and (min-width: 1024px) {
-
-    .div_header {
-        justify-content: center, space-between;
-        padding: 50px 10%;/* le 10% correspond à la marge intérieure gauche et droite */
-    }
-
-    .logo {
-        width: 250px;
-    }
-    main img{
-        height: 500px;
-        object-fit: cover;
-    }
-    
-    .menu {
-        max-width: 800px; 
-        margin:auto; 
-        padding: 40px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .commander{
-        width: 20%;
-    }
-
-}
-
-
   .confirmation {
     position: relative;
     display: flex;
@@ -323,3 +301,33 @@ footer .fa-solid{
     display: flex;
     align-items: flex-end;
   }
+
+/* Version Desktop */
+  
+
+@media screen and (min-width: 1024px) {
+
+    /* .div_header {
+        
+        padding: 50px 10%;/* le 10% correspond à la marge intérieure gauche et droite 
+    }
+
+    .logo {
+        width: 250px;
+    } */
+    main img{
+        height: 500px;
+        object-fit: cover;
+    }
+    
+    .menu {
+        max-width: 800px; 
+        margin:auto; 
+        padding: 40px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .commander{
+        width: 20%;
+    }
+}
