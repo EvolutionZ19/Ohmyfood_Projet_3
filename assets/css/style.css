@@ -130,7 +130,7 @@
   .bouton span {
     border-radius: 50%;
     color: #fff;
-    height: 22px;
+    height: 25px;
     width: 25px;
     display: flex;
     background-color:var(--couleur-violet);
@@ -319,6 +319,9 @@ footer .fa-solid{
 /* Media Query pour Desktop à partir de 1024px */
 @media screen and (min-width: 1024px) {
     /* Header */
+    .div_header{
+        margin-bottom: 15px;
+    }
     .div-logo {
         padding: 60px;
     }
@@ -334,7 +337,7 @@ footer .fa-solid{
     }
 
     .section_1 a{
-        width: 21%;
+        width: 28%;
     }
 
     .section_1 h2 {
