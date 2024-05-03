@@ -115,7 +115,7 @@
 }
   
   .bouton {
-    width: 90%;
+    width: 100%;
     background-color: var(--couleur-grise_background);
     margin-bottom: 20px;
     border-radius: 20px;
@@ -260,10 +260,11 @@ footer {
     background-color: #353535;
     color: #fff;
     padding: 20px;
+    margin-top: -30px;
     
     
 }
-footer h2{
+footer p{
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -443,4 +444,13 @@ footer .fa-solid{
     }
     
 
+}
+
+/* Media Query pour tablette à partir de 768px */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .section_1 a{
+        width: 60%;
+    }
 }

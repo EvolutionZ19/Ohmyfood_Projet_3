@@ -53,16 +53,19 @@ img{
 }
 
 .titre{
-    gap: 80px;
     display: flex;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'shrikhand', italic;
-    letter-spacing: 1px;
     margin-top: 20px;
     margin-left: 2px;
     margin-bottom: 20px;
+    gap: 15px;
 }
+.titre h2{
+    font-size: 27px;
+    font-weight: 400;
+    font-family: 'shrikhand', italic;
+    
+}
+
 
 .titre i{
     margin-top: 10px;
@@ -176,12 +179,12 @@ article{
 footer {
     background-color: #353535;
     color: #fff;
-    padding: 00px;
+    padding: 20px;
     margin-top: -30px;
     
     
 }
-footer h2{
+footer p{
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -190,6 +193,7 @@ footer h2{
 
 footer ul{
     list-style: none;
+    padding: 0;
 }
 
 footer ul a{
@@ -200,7 +204,7 @@ footer ul a{
     font-family: 'Roboto', sans-serif;
         
 }
-footer ul li{
+ footer ul li{
     margin-bottom: 15px;
     font-family: 'Roboto', sans-serif;
 }
@@ -214,7 +218,6 @@ footer .fa-handshake-angle {
 
 footer .fa-solid{
     font-size: 11px;
-    
 }
 
 #note_enchantee{
@@ -339,8 +342,72 @@ footer .fa-solid{
     .menu h3{
         margin-top: 50px;
     }
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-left: auto;
+    }
+    
+    footer ul li {
+        margin-right: 15px;
+    }
+    
+    footer ul li:last-child {
+        margin-right: 50px; /* pour espacer le dernier élément */
+    }
+    
+    footer ul a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    footer .logo_footer {
+        order: 2; /* pour inverser l'ordre des éléments */
+    }
+    
 
 }
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    .titre {
+      gap: 50px;
+    }
+  }
+  
+  @media screen and (min-width: 425px) and (max-width: 767px) {
+    .titre {
+        gap: 80px;
+    }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .titre{
+        justify-content: center;
+        gap: 35px;
+    
+}
+
+.commander{
+    width: 21%;
+    margin-top: 40px;
+}
+
+
+}
+
+
+
 
 /* Animation de l'entrée des articles de la section de menu */
 @keyframes slideIn {
