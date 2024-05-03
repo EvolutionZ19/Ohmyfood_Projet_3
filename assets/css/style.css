@@ -363,8 +363,7 @@ footer .fa-solid{
     }
     .bouton div{
         display: flex;
-        margin-left: 0px;
-        gap: 20px;
+        gap: 15px;
         height: 60px;
         align-items: center;
         
@@ -386,7 +385,7 @@ footer .fa-solid{
     }
     
     .bouton p{
-        font-size: 13px;
+        font-size: 15px;
     }
     /* Section restaurants */
   .restaurants{
